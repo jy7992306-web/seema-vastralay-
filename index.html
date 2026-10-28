@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seema Vastraalay - पुरुषों, महिलाओं और बच्चों के कपड़ों का कलेक्शन।">
+  <title>Seema Vastraalay | सीमा वस्त्रालय</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">सीमा वस्त्रालय में आपका स्वागत है • Welcome to Seema Vastraalay</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Seema Vastraalay home">
+      <span class="brand-mark">SV</span>
+      <span><strong>Seema Vastraalay</strong><small>सीमा वस्त्रालय</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="मेन्यू खोलें" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">होम</a>
+      <a href="#collection">कलेक्शन</a>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR STYLE, YOUR STORY</p>
+        <h1>आपकी पसंद,<br><span>आपका अपना वस्त्रालय</span></h1>
+        <p>हर मौके के लिए खूबसूरत कपड़ों का शानदार कलेक्शन।</p>
+        <a class="button" href="#collection">हमारा कलेक्शन देखें <span>→</span></a>
+      </div>
+      <div class="hero-photo" role="img" aria-label="पारंपरिक भारतीय फैशन"></div>
+      <div class="hero-decoration">Elegance • Comfort • Style</div>
+    </section>
+
+    <section class="section categories-section">
+      <div class="section-heading">
+        <p class="eyebrow">FIND YOUR STYLE</p>
+        <h2>हमारी कैटेगरी</h2>
+        <p>हर उम्र और हर अंदाज़ के लिए कुछ खास</p>
+      </div>
+      <div class="category-list">
+        <button class="category active" data-filter="all"><span class="category-icon">✦</span>सभी कपड़े</button>
+        <button class="category" data-filter="women"><span class="category-icon">❀</span>महिलाओं के कपड़े</button>
+        <button class="category" data-filter="men"><span class="category-icon">◇</span>पुरुषों के कपड़े</button>
+        <button class="category" data-filter="kids"><span class="category-icon">♡</span>बच्चों के कपड़े</button>
+      </div>
+    </section>
+
+    <section class="section collection-section" id="collection">
+      <div class="collection-heading">
+        <div>
+          <p class="eyebrow">HANDPICKED FOR YOU</p>
+          <h2>हमारा कलेक्शन</h2>
+        </div>
+        <span class="collection-note">फोटो और कीमतें उदाहरण के लिए हैं</span>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="women">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85" alt="पारंपरिक साड़ी" loading="lazy"><span class="tag">महिलाएं</span></div>
+          <div class="product-info"><h3>एलिगेंट साड़ी</h3><p>खास मौकों के लिए</p><strong>₹1,299 से</strong></div>
+        </article>
+        <article class="product-card" data-category="men">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=700&q=85" alt="पुरुषों का फॉर्मल पहनावा" loading="lazy"><span class="tag">पुरुष</span></div>
+          <div class="product-info"><h3>फॉर्मल वियर</h3><p>क्लासिक और स्मार्ट</p><strong>₹1,499 से</strong></div>
+        </article>
+        <article class="product-card" data-category="women">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=700&q=85" alt="महिलाओं का एथनिक पहनावा" loading="lazy"><span class="tag">महिलाएं</span></div>
+          <div class="product-info"><h3>एथनिक सूट</h3><p>रोज़ाना और त्योहारों के लिए</p><strong>₹899 से</strong></div>
+        </article>
+        <article class="product-card" data-category="men">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85" alt="कैजुअल टी-शर्ट" loading="lazy"><span class="tag">पुरुष</span></div>
+          <div class="product-info"><h3>कैजुअल टी-शर्ट</h3><p>आरामदायक रोज़ाना स्टाइल</p><strong>₹399 से</strong></div>
+        </article>
+        <article class="product-card" data-category="kids">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85" alt="बच्चों के कपड़े" loading="lazy"><span class="tag">बच्चे</span></div>
+          <div class="product-info"><h3>किड्स कलेक्शन</h3><p>रंगीन और आरामदायक</p><strong>₹499 से</strong></div>
+        </article>
+        <article class="product-card" data-category="men">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=85" alt="पुरुषों की शर्ट" loading="lazy"><span class="tag">पुरुष</span></div>
+          <div class="product-info"><h3>स्मार्ट शर्ट</h3><p>ऑफिस और बाहर जाने के लिए</p><strong>₹699 से</strong></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>इस कैटेगरी में अभी कोई आइटम नहीं है।</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image"></div>
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT OUR STORE</p>
+        <h2>आपकी पसंद, हमारी प्राथमिकता</h2>
+        <p>सीमा वस्त्रालय में आपका स्वागत है। हमारा उद्देश्य है कि आपको एक ही जगह पर अलग-अलग स्टाइल और हर मौके के लिए कपड़ों के विकल्प मिलें।</p>
+        <div class="promise-list">
+          <span>✧ चुना हुआ कलेक्शन</span>
+          <span>✧ हर उम्र के लिए विकल्प</span>
+          <span>✧ आपकी पसंद का सम्मान</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">COME SAY HELLO</p>
+      <h2>हमसे संपर्क करें</h2>
+      <p>हमारी दुकान पर आइए और पूरा कलेक्शन देखिए।</p>
+      <div class="contact-details">
+        <div><span class="contact-icon">⌖</span><strong>दुकान का पता</strong><p>यहाँ अपनी दुकान का पूरा पता लिखें</p></div>
+        <div><span class="contact-icon">☎</span><strong>फोन नंबर</strong><p>यहाँ अपना संपर्क नंबर लिखें</p></div>
+        <div><span class="contact-icon">◷</span><strong>दुकान का समय</strong><p>यहाँ खुलने और बंद होने का समय लिखें</p></div>
+      </div>
+      <p class="small-note">नोट: वेबसाइट पर दिखाई गई कीमतें उदाहरण हैं। सही कीमतें और दुकान की जानकारी खुद अपडेट करें।</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="#home">Seema Vastraalay <span>सीमा वस्त्रालय</span></a>
+    <p>आपके परिवार की पसंद, आपके अपने वस्त्रालय में।</p>
+    <div class="footer-line"></div>
+    <small>© <span id="year"></span> Seema Vastraalay. All rights reserved.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
